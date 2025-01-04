@@ -8,7 +8,7 @@
 ## 안드로이드
 1. [다운로드](https://github.com/MineEric64/SIDBypass/releases/latest/download/SIDQRApp.apk) 및 설치
 
-![setup1](https://github.com/MineEric64/SIDBypass/blob/main/SIDQRApp/setup1.jpg?raw=true)
+![setup1](https://github.com/MineEric64/SIDBook/blob/main/SIDQRApp/setup1.jpg?raw=true)
 
 설치 시 이런 문구가 나오면, '무시하고 설치' 버튼을 눌러주세요.
 
