@@ -23,3 +23,7 @@
 
 # 유의사항
 - 이 앱(및 프로그램)은 오직 교육용으로 사용되어야 함을 참고바랍니다.
+
+# 사용한 라이브러리
+- [AForge.NET](https://www.aforgenet.com/framework/): 웹캠 이미지 가져오기
+- [ZXing.Net](https://github.com/micjahn/ZXing.Net): QR 코드 분석
