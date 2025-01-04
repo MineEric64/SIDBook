@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SIDBookConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe8d4ea097302f07d5b2a9cb122d633234f2686e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+681d22988df994c78ca3d7556387335456c7a59d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SIDBookConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SIDBookConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,8 +2,6 @@ package com.cbnu.sidbook
 
 import android.graphics.Bitmap
 import android.os.Bundle
-import android.provider.Settings.Global
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -15,16 +13,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.cbnu.sidbook.R
 import com.google.zxing.BarcodeFormat
+import com.google.zxing.EncodeHintType
 import com.journeyapps.barcodescanner.BarcodeEncoder
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-
 import java.time.LocalDateTime
-import java.time.ZoneId
-import java.time.ZonedDateTime
+import java.util.Hashtable
+
 
 class MainActivity : AppCompatActivity() {
     var id = 0
@@ -113,8 +109,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun generateBitmapQRCode(contents: String): Bitmap {
+        val hints: Hashtable<EncodeHintType, String> = Hashtable<EncodeHintType, String>()
+        hints[EncodeHintType.CHARACTER_SET] = "UTF-8"
+
         val barcodeEncoder = BarcodeEncoder()
-        return barcodeEncoder.encodeBitmap(contents, BarcodeFormat.QR_CODE, 1024, 1024)
+        return barcodeEncoder.encodeBitmap(contents, BarcodeFormat.QR_CODE, 1024, 1024, hints)
     }
 
     fun parseId(idText: EditText, nameText: EditText) {
