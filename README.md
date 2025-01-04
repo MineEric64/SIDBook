@@ -1,5 +1,6 @@
 # 방명록 시스템, SID-Book
 ![logo](https://github.com/MineEric64/SIDBook/blob/main/SIDQRApp/sidbypass3.png?raw=true)
+![intro](https://github.com/MineEric64/SIDBook/blob/main/SIDQRApp/intro.jpg?raw=true)
  > [!NOTE]
  > 모의 학생증을 이용한 대학교 기관 방명록 시스템
 >
