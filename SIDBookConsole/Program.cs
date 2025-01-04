@@ -89,7 +89,7 @@ namespace SIDBookConsole
                 string generated = data[2];
 
                 const string format = "{0,-15}{1,-15}{2,-40}{3,-40}";
-                Console.WriteLine(format, id, name, GetDateFormat(DateTime.Now), generated);
+                Console.WriteLine(format, id, name, GetDateFormat(DateTime.Now), GetDateFormat(ParseGeneratedDate(generated)));
             }
         }
 
@@ -109,6 +109,24 @@ namespace SIDBookConsole
         static string GetDateFormat(DateTime date)
         {
             return $"{date.Year}/{date.Month}/{date.Day} {date.Hour}:{date.Minute}:{date.Second}";
+        }
+
+        static DateTime ParseGeneratedDate(string data)
+        {
+            string year1 = data.Substring(0, 4);
+            int year2 = int.Parse(year1);
+            string month1 = data.Substring(4, 2);
+            int month2 = int.Parse(month1);
+            string day1 = data.Substring(6, 2);
+            int day2 = int.Parse(day1);
+            string hour1 = data.Substring(8, 2);
+            int hour2 = int.Parse(hour1);
+            string minute1 = data.Substring(10, 2);
+            int minute2 = int.Parse(minute1);
+            string second1 = data.Substring(12, 2);
+            int second2 = int.Parse(second1);
+
+            return new DateTime(year2, month2, day2, hour2, minute2, second2);
         }
     }
 }
