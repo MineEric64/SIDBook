@@ -8,7 +8,7 @@
 ## 안드로이드
 1. [다운로드](https://github.com/MineEric64/SIDBypass/releases/latest/download/SIDQRApp.apk) 및 설치
 
-![setup1](https://github.com/MineEric64/SIDBypass/blob/main/SIDQRApp/setup1.jpg?raw=true)
+![setup1](https://github.com/MineEric64/SIDBook/blob/main/SIDQRApp/setup1.jpg?raw=true)
 
 설치 시 이런 문구가 나오면, '무시하고 설치' 버튼을 눌러주세요.
 
@@ -23,3 +23,7 @@
 
 # 유의사항
 - 이 앱(및 프로그램)은 오직 교육용으로 사용되어야 함을 참고바랍니다.
+
+# 사용한 라이브러리
+- [AForge.NET](https://www.aforgenet.com/framework/): 웹캠 이미지 가져오기
+- [ZXing.Net](https://github.com/micjahn/ZXing.Net): QR 코드 분석
